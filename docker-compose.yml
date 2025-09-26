@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - "6379:6379"
+    command: redis-server --save 60 1 --loglevel warning
+  backend:
+    build: .
+    container_name: backend
+    command: python manage.py runserver 0.0.0.0:8081
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./core:/app
+    environment:
+      - SECRET_KEY=test
+      - DEBUG=True

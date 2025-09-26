@@ -1,0 +1,15 @@
+# general madules
+Django>=4.2,<5.0
+python-decouple
+Pillow
+djangorestframework
+#third party madules
+markdown       # Markdown support for the browsable API.
+django-filter  # Filtering support
+coreapi
+drf-yasg[validation]
+#deployment madules
+
+redis
+#background proxess
+celery
