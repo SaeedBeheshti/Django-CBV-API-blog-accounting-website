@@ -1,9 +1,4 @@
-This is a project for blog website with CBV and I used Api in it for accounting and CRUDing datas. 
-It has viewsets,unit -testing, Authentication API,swagger for ducumenting APIS ,serializers and ...
-I deployed this project on Docker server and I used Redis for it too.
-
-
-
-
-
-Thanks for reading ;)
+This is a blog website project built with Django using Class-Based Views (CBVs) and Django REST Framework for API implementation.
+It includes account management and CRUD operations through APIs, implemented with ViewSets, Serializers, and Authentication APIs.
+The project also features Swagger documentation, unit testing, and Redis integration for performance optimization.
+Finally, it is containerized and deployed with Docker.
